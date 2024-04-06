@@ -6,9 +6,10 @@ pipeline{
               checkout scm
           }
         }
-        stage("deployment")
+        stage("deployment"){
           steps{
           sh "sudo cp -r /var/lib/jenkins/workspace/om-app-watch/* /var/www/html/"
-          }
+         }
+      }
       }
 }
