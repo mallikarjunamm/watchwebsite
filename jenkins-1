@@ -1,8 +1,5 @@
 pipeline {
 agent any 
-options {
-buildDiscarder(logRotator(numTokeepstr: '5'))
-}
 stages{
  stage('Scan'){
    steps {
